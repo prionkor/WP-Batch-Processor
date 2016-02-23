@@ -95,14 +95,14 @@ class Batch_Processor{
             unset($args['orderby']);
             unset($args['order']);
 
-            $latest_flat_company_id = get_posts($args);
+            $latest_post_id = get_posts($args);
 
-            if(empty($latest_flat_company_id)){
+            if(empty($latest_post_id)){
                 $this->end_of_iteration = true;
                 return 0;
             }
 
-            $id = $latest_flat_company_id[0];
+            $id = $latest_post_id[0];
             set_transient( $transient, $id, 60 * 5);
         }
 
