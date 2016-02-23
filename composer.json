@@ -1,0 +1,15 @@
+{
+    "name": "prionkor/wp-batch-processor",
+    "description": "Batch processor class for WordPress.",
+    "license": "GPL v2.0+",
+    "authors": [
+        {
+            "name": "Sisir Kanti Adhikari",
+            "email": "contact@sisir.me"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": ["Batch_Processor.php"]
+    }
+}
